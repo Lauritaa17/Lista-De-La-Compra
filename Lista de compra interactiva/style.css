@@ -1,0 +1,83 @@
+h1 {
+    color: #6f8da5;
+    font-size: 4em;
+    text-align: center;
+}
+
+.shopping-list {
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#itemInput {
+    padding: 12px;
+    width: 60%;
+    border: none;
+    border-radius: 8px;
+}
+
+#addButton {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color:#6b879e
+}
+
+#shoppingList {
+    list-style: none;
+    padding: 0;
+}
+
+#shoppingList li {
+    background-color: #6f8da5;
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#shoppingList li.comprado {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.delete {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+
+    .shopping-list {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #itemInput,
+    #priceInput,
+    #addButton {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #addButton {
+        padding: 14px;
+    }
+
+    #shoppingList li {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
